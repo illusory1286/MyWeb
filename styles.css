@@ -1,0 +1,11 @@
+body {
+    font-size: 16px; /* 基準字體大小 */
+}
+
+h1 {
+    font-size: 3em; /* 2倍基準字體大小 */
+}
+
+p {
+    font-size: 1.2em; /* 1.2倍基準字體大小 */
+}
