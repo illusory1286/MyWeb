@@ -21,6 +21,10 @@ git commit -m
 //"修改記錄"
 //git commit 只會處理"暫存區"裡的內容
 ```
+```
+git commit -a -m 'Git test'
+//加上-a就不用 先git add
+```
 ==補充說明==
 設定個人資訊,多人合作時可以知道是誰做的
 ```
