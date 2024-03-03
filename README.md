@@ -11,15 +11,15 @@ git status
 ```
 git add .
 ```
-==目前==所在的目錄全部提交
+"目前"所在的目錄全部提交
 ```
 git add {FileName}
 ```
 04.將暫存區的內容提交到儲存庫（Repository）保留
 ```
-git commit -m 
+git commit -m "{Msg}"
 ```
-=="修改記錄"==
+"修改記錄"
 git commit 只會處理"暫存區"裡的內容
 ```
 git commit -a -m 'Git test'
@@ -29,7 +29,7 @@ git commit -a -m 'Git test'
 ```
 git push origin
 ```
-==補充說明==
+補充說明
 設定個人資訊,多人合作時可以知道是誰做的
 ```
 git config --global user.name "{Name}"       
