@@ -17,7 +17,7 @@
 
 .Wehelp {
     text-align: center; /* 將內容置中 */
-    padding: 0 20px; /* 左右留白 */
+    padding: 0 70px; /* 左右留白 */
     display: flex; /* 設定為 flex 容器 */
     flex-direction: column; /* 垂直方向排列子元素 */
 }
@@ -41,10 +41,12 @@
     .Wehelp {
         padding: 0 10px; /* 縮小留白 */
     }
-
+    .head {
+        font-size: 1em;
+    }
     .content {
         width: 100%; /* 100% 寬度，填滿螢幕 */
-        font-size: 1.2em; /* 字體放大 */
+        font-size: 1em; /* 字體放大 */
     }
 
 } 
