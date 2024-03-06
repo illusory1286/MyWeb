@@ -1,52 +1,39 @@
+body{
+    font-size: 16px;
+    font-family: 微軟正黑體;
+}
 /* 標題 */
-.head {
-    font-size: 1.5em;
+.head{
+    margin-top:10px;margin-bottom: 10px;/* div區塊上下各留10px */
+    border: 1px solid black;/* boder : 邊線粗細 樣式 邊線顏色 */
+    padding: 10px;/* 內部文字與邊框間隔10px */
     background-color: bisque;
-    padding: 10px; /* 可根據需要調整內容與邊框的距離 */
-    box-sizing: border-box; /* 保證 padding 和 border 不會增加元素的寬度 */
+    font-size: 20px;
+    text-align: center; /* 文字置中 */
 }
 
 /* 內文 */
-.content {
-    font-size: 1em;
-    text-align: left; /* 讓內容靠左對齊 */
-    width: 100%; /* 100% 寬度，填滿父容器的寬度 */
-    box-sizing: border-box; /* 保證 padding 和 border 不會增加元素的寬度 */
+/* 只套用在div的標籤上 */
+div.content table p{
+    /* display: flex; */
+    margin-left:10px;margin-right: 10px;
+    border: 1px;/* boder : 邊線粗細 樣式 邊線顏色 */
+    flex-direction: column;
+    /* text-align: center; */
+    font-size: 1.1rem;
+}
+
+/* 表格 */
+/* table{
+    width: 1200px;border: 1px solid #888888;
+} */
+td{
+    width: 800px;border: 1px solid #888888;
+    text-align: center; /* 文字置中 */
+}
+/* 表格中的第一對 tr-虛擬標籤 */
+tr:nth-child(1){
+    background-color: goldenrod;color:#fff;
 }
 
 
-.Wehelp {
-    text-align: center; /* 將內容置中 */
-    padding: 0 70px; /* 左右留白 */
-    display: flex; /* 設定為 flex 容器 */
-    flex-direction: column; /* 垂直方向排列子元素 */
-}
-
-/* 桌機 */
-@media(max-width:1800px){
-    /* 螢幕寬度小於1800px,套用這css */
-    .Wehelp{
-        margin: 0 auto; /* 將內容置中 */ 
-    }
-    .content{
-        flex-wrap: wrap;
-        font-size: 1.5em;
-        width: 95%;
-    }
-} 
-
-/* 手機 */
-@media(max-width:500px){
-    /* 螢幕寬度小於1250px,套用這css */
-    .Wehelp {
-        padding: 0 10px; /* 縮小留白 */
-    }
-    .head {
-        font-size: 1em;
-    }
-    .content {
-        width: 100%; /* 100% 寬度，填滿螢幕 */
-        font-size: 1em; /* 字體放大 */
-    }
-
-} 
