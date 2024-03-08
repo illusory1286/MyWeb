@@ -20,7 +20,7 @@ div.content table p{
     border: 1px;/* boder : 邊線粗細 樣式 邊線顏色 */
     flex-direction: column;
     /* text-align: center; */
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 /* 表格 */
@@ -35,5 +35,4 @@ td{
 tr:nth-child(1){
     background-color: goldenrod;color:#fff;
 }
-
 
