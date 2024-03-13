@@ -2,14 +2,44 @@ body{
     font-size: 16px;
     font-family: 微軟正黑體;
 }
+/* 最外層的div */
+.Wehelp{
+    width: 1400px;margin-left: auto;margin-right: auto;
+}
 /* 標題 */
-.head{
+header{
     margin-top:10px;margin-bottom: 10px;/* div區塊上下各留10px */
     border: 1px solid black;/* boder : 邊線粗細 樣式 邊線顏色 */
     padding: 10px;/* 內部文字與邊框間隔10px */
     background-color: bisque;
     font-size: 20px;
     text-align: center; /* 文字置中 */
+}
+
+.wrap{
+    /* width: 1380px; */
+    width: 100%; /* 使 .wrap 寬度滿佈父容器 */
+    display: flex;
+    margin-right: 15px;
+}
+.box{
+    position:  relative;
+    width: 660px;padding: 10px;
+    /* margin-right: 10px; */
+    /* white-space: nowrap;  */
+    /* 防止內容換行 */
+    /* display: inline-block;vertical-align: top; */
+    /* 左右並排,對齊上方 */
+}
+
+.box:first-child {
+    width: 660px;
+    flex: 1; /* 將第一個 .box 撐滿可用的空間 */
+}
+
+.box:last-child {
+    width: 480px; /* 右邊 .box 的寬度 */
+    /* background-color: lightcoral; 右邊 .box 的背景顏色 */
 }
 
 /* 內文 */
@@ -20,12 +50,21 @@ div.content table p{
     border: 1px;/* boder : 邊線粗細 樣式 邊線顏色 */
     flex-direction: column;
     /* text-align: center; */
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
+    line-height: 24px; /* 設定文字行距 */
+    letter-spacing: 10px; /* 設定文字間距 */
 }
+
+
+
+
+
+
 
 /* 表格 */
 /* table{
     width: 1200px;border: 1px solid #888888;
+
 } */
 td{
     width: 800px;border: 1px solid #888888;
